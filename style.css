@@ -64,38 +64,23 @@ h1 { font-size: 3rem; }
     section { padding: 30px; }
     h1 { font-size: 2rem; }
 }
-/* --- LỚP STICKER HOA LILY --- */
+/* --- STICKER ĐIỀU CHỈNH --- */
 .lily-sticker {
     position: absolute;
-    width: 60px; /* Kích thước bông hoa, chỉnh tùy ý */
-    height: auto;
+    width: 45px; /* Kích thước nhỏ xinh */
     z-index: 10;
-    pointer-events: none; /* Tránh cản trở việc click chuột */
+    pointer-events: none;
 }
 
-/* Vị trí 1: Gắn lên góc Avatar */
-.lily-avatar {
-    top: -20px;
-    right: -20px;
-    width: 50px;
-    transform: rotate(15deg);
-}
+/* Sticker lily tại Avatar */
+.lily-hero { top: -10px; right: -10px; }
 
-/* Vị trí 2: Gắn vào ô Giới thiệu */
-.lily-intro {
-    top: -25px;
-    left: -25px;
-    width: 55px;
-}
+/* Sticker tại phần Giới thiệu */
+.lily-intro { top: -20px; left: -20px; }
 
-/* Vị trí 3: Gắn vào ô Tổng kết */
-.lily-summary {
-    bottom: -25px;
-    right: -25px;
-    width: 55px;
-    transform: rotate(-15deg);
-}
-.avatar-frame {
-    position: relative; /* Rất quan trọng để các sticker nằm đúng góc */
-    width: 260px;
-}
+/* Sticker tại phần Tổng kết */
+.lily-tongket { bottom: -20px; right: -20px; transform: rotate(-20deg); }
+
+/* Vị trí mới cho icon lá (đối diện góc cũ) */
+.avatar-sticker.s1 { top: auto; bottom: -6px; left: 6px; } 
+.avatar-sticker.s2 { top: -6px; right: 6px; }
