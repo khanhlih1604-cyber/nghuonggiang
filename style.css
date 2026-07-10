@@ -69,10 +69,25 @@ section {
 }
 
 /* Đảm bảo danh sách không bị thụt lề quá sâu */
-.goal-list {
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 0 0;
+/* Tạo lưới 2 cột */
+.goal-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia làm 2 cột bằng nhau */
+    gap: 12px;                      /* Khoảng cách giữa các ô */
+    margin-top: 15px;
+}
+
+/* Tinh chỉnh các thẻ li bên trong để nó trông gọn gàng hơn khi chia cột */
+.goal-grid li {
+    background: var(--green-pale);  /* Giữ màu nền cũ */
+    padding: 12px;                  /* Padding vừa phải */
+    border-radius: 12px;
+    font-size: 0.85rem;             /* Giảm size chữ để vừa với cột hẹp */
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    height: 100%;                   /* Giúp các ô bằng nhau về chiều cao */
+}
 }
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
 .lily-intro {
