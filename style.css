@@ -49,41 +49,41 @@ section {
 }
 
 /* Ép các ô bên trong không bị giãn hết cỡ */
-.intro-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
+/* --- SỬA LẠI ĐỂ CHIA 2 CỘT CHO MỤC TIÊU --- */
+.intro-layout { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 22px; 
 }
 
-/* Các ô thẻ nhỏ lại */
 .intro-card {
-    background: var(--white-soft);
-    border-radius: 26px;
-    padding: 24px;
-    box-shadow: var(--shadow);
+    background: var(--white-soft); 
+    border-radius: var(--radius-lg); 
+    padding: 28px 30px;
+    box-shadow: var(--shadow); 
     border: 1px solid rgba(127,174,120,0.14);
-    
-    /* Tăng độ rộng để chứa được 2 cột */
-    max-width: 900px; 
-    margin: 0 auto;
+    margin-bottom: 22px;
 }
-/* Đảm bảo danh sách không bị thụt lề quá sâu */
-/* Tạo lưới 2 cột */
+
+/* Ép grid cho phần mục tiêu */
 .goal-grid {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr; /* Chia 2 cột */
+    gap: 15px !important;
+    list-style: none !important;
+    padding: 0 !important;
 }
-/* Tinh chỉnh các thẻ li bên trong để nó trông gọn gàng hơn khi chia cột */
+
+@media (max-width: 760px) {
+    .goal-grid { grid-template-columns: 1fr; } /* Mobile thì quay về 1 cột */
+}
+
 .goal-grid li {
-    background: var(--green-pale);  /* Giữ màu nền cũ */
-    padding: 12px;                  /* Padding vừa phải */
+    background: var(--green-pale);
+    padding: 12px;
     border-radius: 12px;
-    font-size: 0.85rem;             /* Giảm size chữ để vừa với cột hẹp */
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    height: 100%;                   /* Giúp các ô bằng nhau về chiều cao */
-}
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
 .lily-intro {
