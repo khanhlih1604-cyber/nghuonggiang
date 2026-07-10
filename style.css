@@ -41,7 +41,18 @@ section {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.5);
 }
-
+/* Tinh chỉnh lại ô Giới thiệu */
+.intro-card {
+    background: var(--white-soft);
+    border-radius: 26px;
+    padding: 24px 28px; /* Giảm padding một chút để gọn hơn */
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(127,174,120,0.14);
+    margin-bottom: 22px;
+    max-width: 800px;  /* Giới hạn độ rộng tối đa của ô */
+    margin-left: auto; /* Căn giữa */
+    margin-right: auto;
+}
 /* --- TYPOGRAPHY --- */
 h1, h2, h3 { font-family: 'Baloo 2', cursive; color: var(--ink); }
 h1 { font-size: 3rem; }
