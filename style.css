@@ -67,20 +67,16 @@ h1 { font-size: 3rem; }
 /* --- STICKER ĐIỀU CHỈNH --- */
 .lily-sticker {
     position: absolute;
-    width: 45px; /* Kích thước nhỏ xinh */
+    width: 60px; /* Kích thước tùy chỉnh */
     z-index: 10;
     pointer-events: none;
+    
+    /* Hiệu ứng giống sticker Snoopy */
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Đổ bóng nhẹ */
+    transition: transform 0.3s ease;
 }
 
-/* Sticker lily tại Avatar */
-.lily-hero { top: -10px; right: -10px; }
-
-/* Sticker tại phần Giới thiệu */
-.lily-intro { top: -20px; left: -20px; }
-
-/* Sticker tại phần Tổng kết */
-.lily-tongket { bottom: -20px; right: -20px; transform: rotate(-20deg); }
-
-/* Vị trí mới cho icon lá (đối diện góc cũ) */
-.avatar-sticker.s1 { top: auto; bottom: -6px; left: 6px; } 
-.avatar-sticker.s2 { top: -6px; right: 6px; }
+/* Thêm hiệu ứng nghiêng nhẹ để trông tự nhiên hơn */
+.lily-hero { top: -20px; right: -15px; transform: rotate(15deg); }
+.lily-intro { top: -30px; left: -25px; transform: rotate(-10deg); }
+.lily-tongket { bottom: -30px; right: -25px; transform: rotate(15deg); }
