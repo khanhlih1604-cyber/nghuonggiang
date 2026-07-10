@@ -44,18 +44,17 @@ section {
 /* Tinh chỉnh lại ô Giới thiệu */
 .intro-card {
     background: var(--white-soft);
-    border-radius: var(--radius-lg); 
-    padding: 20px 24px; /* Giảm padding thêm nữa để nội dung sát vào mép hơn */
+    border-radius: 26px;
+    padding: 20px 24px;
     box-shadow: var(--shadow);
     border: 1px solid rgba(127,174,120,0.14);
     
-    /* Thu gọn khung lại */
-    max-width: 500px; 
-    margin-left: auto; 
+    /* Thu gọn tuyệt đối */
+    width: fit-content;      /* Chỉ rộng bằng nội dung bên trong */
+    max-width: 450px;        /* Giới hạn không quá to trên màn hình lớn */
+    margin-left: auto;
     margin-right: auto;
-    
-    /* Đảm bảo text không bị giãn dòng quá rộng */
-    text-align: center; 
+    text-align: center;      /* Căn giữa chữ để nhìn gọn hơn */
 }
 
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
