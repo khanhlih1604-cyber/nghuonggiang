@@ -43,20 +43,9 @@ section {
 }
 /* Tinh chỉnh lại ô Giới thiệu */
 .intro-card {
-    background: var(--white-soft);
-    border-radius: 26px;
-    padding: 20px 24px;
-    box-shadow: var(--shadow);
-    border: 1px solid rgba(127,174,120,0.14);
-    
-    /* Thu gọn tuyệt đối */
-    width: fit-content;      /* Chỉ rộng bằng nội dung bên trong */
-    max-width: 450px;        /* Giới hạn không quá to trên màn hình lớn */
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;      /* Căn giữa chữ để nhìn gọn hơn */
+    width: 300px !important;
+    max-width: 300px !important;
 }
-
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
 .lily-intro {
     width: 45px !important; /* Thu nhỏ sticker khi khung nhỏ */
