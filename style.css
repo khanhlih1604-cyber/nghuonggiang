@@ -1,0 +1,66 @@
+/* --- BIẾN MÀU SẮC --- */
+:root {
+    --green-deep: #7FAE78;
+    --pink-deep: #E0839A;
+    --cream: #FBF9F3;
+    --ink: #454C40;
+    --white-soft: rgba(255, 255, 255, 0.9);
+}
+
+/* --- CẤU HÌNH NỀN --- */
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--ink);
+    background-image: url('flower-bg.jpg'); /* Thay tên ảnh của bạn tại đây */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: var(--cream);
+}
+
+/* Lớp phủ watermark */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(251, 249, 243, 0.8); /* Hoa sẽ ẩn hiện mờ ảo nhờ độ mờ 0.8 */
+    z-index: -1;
+}
+
+/* --- BỐ CỤC CHÍNH --- */
+main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+
+section {
+    background: var(--white-soft);
+    padding: 50px;
+    margin-bottom: 40px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3 { font-family: 'Baloo 2', cursive; color: var(--ink); }
+h1 { font-size: 3rem; }
+.accent { color: var(--pink-deep); }
+
+/* --- CÁC THÀNH PHẦN KHÁC --- */
+.btn-primary {
+    background: var(--green-deep);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { transform: translateY(-3px); background: #6b9464; }
+
+/* Tối ưu mobile */
+@media (max-width: 768px) {
+    section { padding: 30px; }
+    h1 { font-size: 2rem; }
+}
