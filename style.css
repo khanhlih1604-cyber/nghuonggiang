@@ -74,9 +74,9 @@ body::after {
     
     /* Chèn 3-4 ảnh hoa ở các vị trí khác nhau */
     background-image: 
-        url('lily-sticker-1.png'), 
-        url('lily-sticker-2.png'), 
-        url('lily-sticker-3.png');
+        url('lily-sticker1.png'), 
+        url('lily-sticker2.png'), 
+        url('lily-sticker3.png');
     
     /* Vị trí của các bông hoa */
     background-position: 
@@ -91,3 +91,11 @@ body::after {
     /* Độ mờ của sticker để trông như nền */
     opacity: 0.6;
 }
+.sticker-lily {
+    position: fixed;
+    z-index: -1;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.s1 { top: 10%; left: 5%; width: 200px; transform: rotate(15deg); }
+.s2 { bottom: 10%; right: 5%; width: 250px; }
