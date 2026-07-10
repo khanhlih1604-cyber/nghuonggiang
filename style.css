@@ -44,14 +44,25 @@ section {
 /* Tinh chỉnh lại ô Giới thiệu */
 .intro-card {
     background: var(--white-soft);
-    border-radius: 26px;
-    padding: 24px 28px; /* Giảm padding một chút để gọn hơn */
+    border-radius: var(--radius-lg); 
+    padding: 20px 24px; /* Giảm padding thêm nữa để nội dung sát vào mép hơn */
     box-shadow: var(--shadow);
     border: 1px solid rgba(127,174,120,0.14);
-    margin-bottom: 22px;
-    max-width: 500px;  /* Giới hạn độ rộng tối đa của ô */
-    margin-left: auto; /* Căn giữa */
+    
+    /* Thu gọn khung lại */
+    max-width: 500px; 
+    margin-left: auto; 
     margin-right: auto;
+    
+    /* Đảm bảo text không bị giãn dòng quá rộng */
+    text-align: center; 
+}
+
+/* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
+.lily-intro {
+    width: 45px !important; /* Thu nhỏ sticker khi khung nhỏ */
+    top: -15px !important;
+    left: -15px !important;
 }
 /* --- TYPOGRAPHY --- */
 h1, h2, h3 { font-family: 'Baloo 2', cursive; color: var(--ink); }
