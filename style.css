@@ -95,8 +95,7 @@ h1 { font-size: 3rem; }
     width: 55px;
     transform: rotate(-15deg);
 }
-
-/* Quan trọng: Để sticker "nhảy" theo khung, cha của nó phải có position: relative */
-.avatar-frame, .intro-card, .reflect-col {
-    position: relative;
+.avatar-frame {
+    position: relative; /* Rất quan trọng để các sticker nằm đúng góc */
+    width: 260px;
 }
