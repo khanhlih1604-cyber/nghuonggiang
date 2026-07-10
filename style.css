@@ -75,7 +75,13 @@ h1 { font-size: 3rem; }
     filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.2)); /* Đổ bóng nhẹ */
     transition: transform 0.3s ease;
 }
-
+.lily-sticker {
+    animation: floating 3s ease-in-out infinite;
+}
+@keyframes floating {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
 /* Thêm hiệu ứng nghiêng nhẹ để trông tự nhiên hơn */
 .lily-hero { top: -20px; right: -15px; transform: rotate(15deg); }
 .lily-intro { top: -30px; left: -25px; transform: rotate(-10deg); }
