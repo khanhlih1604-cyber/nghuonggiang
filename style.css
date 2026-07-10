@@ -64,7 +64,7 @@ section {
     border: 1px solid rgba(127,174,120,0.14);
     
     /* Tăng độ rộng để chứa được 2 cột */
-    max-width: 700px; 
+    max-width: 900px; 
     margin: 0 auto;
 }
 /* Đảm bảo danh sách không bị thụt lề quá sâu */
@@ -152,4 +152,16 @@ h1 { font-size: 3rem; }
     line-height: 1.4;
     display: flex;
     align-items: flex-start;
+}
+.goal-list {
+    display: grid !important; /* Dùng !important để ghi đè flex cũ */
+    grid-template-columns: 1fr 1fr !important; /* Chia 2 cột bằng nhau */
+    gap: 15px !important;
+    margin-top: 15px !important;
+}
+
+/* Đảm bảo các mục con không bị thụt lề */
+.goal-list li {
+    flex-direction: column; /* Hoặc để mặc định nếu muốn nội dung dàn ngang */
+    height: 100%;           /* Giúp các ô bằng chiều cao nhau */
 }
