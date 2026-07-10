@@ -70,11 +70,8 @@ section {
 /* Đảm bảo danh sách không bị thụt lề quá sâu */
 /* Tạo lưới 2 cột */
 .goal-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Chia đúng 2 cột */
-    gap: 15px;                      /* Khoảng cách giữa các ô */
-    margin-top: 15px;
-    width: 100%;                    /* Ép chiếm hết độ rộng của khung cha */
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
 }
 /* Tinh chỉnh các thẻ li bên trong để nó trông gọn gàng hơn khi chia cột */
 .goal-grid li {
