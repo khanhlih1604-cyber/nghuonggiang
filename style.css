@@ -42,9 +42,23 @@ section {
     border: 1px solid rgba(255,255,255,0.5);
 }
 /* Tinh chỉnh lại ô Giới thiệu */
+/* Container bao bọc tất cả các ô giới thiệu để thu gọn */
+.intro-wrapper {
+    max-width: 800px;        /* Điều chỉnh con số này để thu nhỏ/mở rộng cụm */
+    margin: 0 auto;          /* Căn giữa cụm */
+}
+
+/* Ép các ô bên trong không bị giãn hết cỡ */
+.intro-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* Các ô thẻ nhỏ lại */
 .intro-card {
-    width: 300px !important;
-    max-width: 300px !important;
+    padding: 20px;           /* Giảm padding */
+    width: 100%;             /* Chỉ chiếm 100% của cái khung 800px thôi */
 }
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
 .lily-intro {
