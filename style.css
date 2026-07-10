@@ -63,20 +63,19 @@ section {
     box-shadow: var(--shadow);
     border: 1px solid rgba(127,174,120,0.14);
     
-    /* Gom và thu nhỏ */
-    max-width: 450px;       /* Bạn chỉnh con số này nhỏ hơn nếu muốn */
-    margin: 0 auto 20px auto; /* Căn giữa và tạo khoảng cách dưới */
+    /* Tăng độ rộng để chứa được 2 cột */
+    max-width: 700px; 
+    margin: 0 auto;
 }
-
 /* Đảm bảo danh sách không bị thụt lề quá sâu */
 /* Tạo lưới 2 cột */
 .goal-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Chia làm 2 cột bằng nhau */
-    gap: 12px;                      /* Khoảng cách giữa các ô */
+    grid-template-columns: 1fr 1fr; /* Chia đúng 2 cột */
+    gap: 15px;                      /* Khoảng cách giữa các ô */
     margin-top: 15px;
+    width: 100%;                    /* Ép chiếm hết độ rộng của khung cha */
 }
-
 /* Tinh chỉnh các thẻ li bên trong để nó trông gọn gàng hơn khi chia cột */
 .goal-grid li {
     background: var(--green-pale);  /* Giữ màu nền cũ */
