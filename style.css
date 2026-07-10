@@ -57,8 +57,22 @@ section {
 
 /* Các ô thẻ nhỏ lại */
 .intro-card {
-    padding: 20px;           /* Giảm padding */
-    width: 100%;             /* Chỉ chiếm 100% của cái khung 800px thôi */
+    background: var(--white-soft);
+    border-radius: 26px;
+    padding: 24px;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(127,174,120,0.14);
+    
+    /* Gom và thu nhỏ */
+    max-width: 450px;       /* Bạn chỉnh con số này nhỏ hơn nếu muốn */
+    margin: 0 auto 20px auto; /* Căn giữa và tạo khoảng cách dưới */
+}
+
+/* Đảm bảo danh sách không bị thụt lề quá sâu */
+.goal-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
 }
 /* Điều chỉnh lại kích thước sticker để không che mất nội dung khi khung nhỏ lại */
 .lily-intro {
